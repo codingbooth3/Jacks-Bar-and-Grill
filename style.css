@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo {
+    height: 15vh;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flex {
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+#navList {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-left: 10vw;
+    justify-content: space-evenly;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    width: 60vw;
+    height: 7.5vh;
+}
+
+.navItem {
+    cursor: pointer;
+}
+
+#orderNow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 7.5vw;
+    padding-block: 10px;
+    padding-inline: 20px;
+    cursor: pointer;
+}
+
+#navBottom {
+    height: 1px;
+    background-color: lightgray;
+    width: 100%;
+}
+
+main {
+    margin-top: 25vh;
+}
+
+
+#mainHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#headingImage {
+    margin-top: 2.5vh;
+    height: 100vh;
+}
+
+#cta {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+#ctaText {
+    font-size: 45px;
+    color: white;
+}
+
+#ctaBody {
+    flex-direction: column;
+    background-color: brown;
+    height: 17.5vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#special {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+#menuBody {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 90vw;
+    height: auto;
+    margin-left: 5vw;
+}
+
+.menuBodyItem {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menuImage {
+    height: 20vw;
+    width: 30vw;
+}
+
+#contactBody {
+    margin-top: 10vh;
+    padding-block: 5vh;
+    width: auto;
+    height: auto;
+    background-color: yellow;
+    margin-bottom: 12.5vh;
+}
+
+#contactHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: navy;
+}
+
+@media (min-width:1440px) {
+    #orderNow {
+        padding-block: 2.5px;
+        padding-inline: 15px;
+        border-radius: 30px;
+    }
+}
