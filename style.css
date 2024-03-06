@@ -3,43 +3,46 @@
     margin: 0;
 }
 
-header {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#logo {
-    height: 15vh;
-}
-
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#flex {
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    height: 20vh;
+    width: 100%;
     display: flex;
-    margin-bottom: 1vh;
+    flex-direction: column;
+}
+
+#header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19vh;
+}
+
+#logo {
+    height: 15vh;
+    margin-left: 5vw;
+}
+
+#hamburger {
+    display: none;
 }
 
 #navList {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    margin-left: 10vw;
+    margin-left: 5vw;
     justify-content: space-evenly;
     list-style: none;
-    display: inline-flex;
-    align-items: center;
+    display: flex;
     width: 60vw;
-    height: 7.5vh;
 }
 
 .navItem {
@@ -47,24 +50,22 @@ header {
 }
 
 #orderNow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    margin-left: 7.5vw;
+    background-color: black;
+    color: white;
     padding-block: 10px;
-    padding-inline: 20px;
-    cursor: pointer;
+    padding-inline: 5px;
+    border-radius: 20px;
 }
 
 #navBottom {
-    height: 1px;
-    background-color: lightgray;
+    margin-top: 2.5vh;
+    height: 2px;
+    background-color: black;
     width: 100%;
 }
 
 main {
-    margin-top: 25vh;
+    margin-top: 21vh;
 }
 
 
@@ -147,8 +148,6 @@ main {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     height: 10vh;
     width: 100%;
     background-color: navy;
@@ -159,5 +158,104 @@ footer {
         padding-block: 2.5px;
         padding-inline: 15px;
         border-radius: 30px;
+    }
+}
+
+@media (max-width:600px) {
+
+    header {
+        height: 140px;
+        position: fixed;
+    }
+
+    #logo {
+        height: 140px;
+        position: absolute;
+    }
+
+    #navList {
+        display: none;
+    }
+
+    #orderNow {
+        display: none;
+    }
+
+    #hamburger {
+        margin-left: 75vw;
+        display: inline;
+    }
+
+    #hamburgerImage {
+        height: 30px;
+    }
+
+    main{
+        margin-top: 21vh;
+    }
+
+    #headerText {
+        font-size: 20px;
+    }
+
+
+    #headingImage {
+        height: 200px;
+        width: 500px;
+        max-width: 80vw;
+    }
+
+    #menuBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cta {
+        margin-top: 2vh;
+    }
+
+    #ctaBody {
+        height: auto;
+    }
+
+    .menuImage {
+        height: 250px;
+        width: 300px;
+    }
+
+    #ctaText {
+        font-size: 20px;
+    }
+
+    #flex, #navBottom {
+        display: none;
+        margin-bottom: 0;
+    }
+
+    #contactMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contactHeader {
+        font-size: 17.5px;
+    }
+
+    #contactSubHeader {
+        font-size: 15px;
+    }
+
+    #emailSignUp {
+        margin-top: 2vh;
+    }
+    
+    #contactBody {
+        width: 350px;
+        margin-bottom: 5vh;
+    }
+
+    footer {
+        display: none;
     }
 }
