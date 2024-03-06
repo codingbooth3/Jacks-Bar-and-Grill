@@ -171,10 +171,37 @@ main {
     align-items: center;
 }
 
+#location {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+#locationFrame {
+    width: 60vw;
+    height: 50vh;
+}
+
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 10vh;
     width: 100%;
-    background-color: navy;
+    background-color: lightgray;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#footerSocial {
+    list-style: none;
 }
 
 @media (min-width:1440px) {
@@ -284,7 +311,13 @@ footer {
         margin-top: 5vh;
     }
 
+    .mobileLink {
+        height: 40px;
+        width: 40px;
+    }
+
     .social {
+        cursor: pointer;
         height: 10vw;
         width: 10vw;
         margin: 20px;
