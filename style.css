@@ -32,11 +32,13 @@ header {
 }
 
 #hamburgerBody {
-    display: none;
+    visibility: hidden;
 }
 
 #mobilePopup {
-    display: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
 }
 
 #navList {
@@ -186,7 +188,8 @@ footer {
 @media (max-width:600px) {
 
     header {
-        height: 140px;
+        z-index: 9999;
+        height: 20vh;
         position: fixed;
     }
 
@@ -205,22 +208,39 @@ footer {
 
     #hamburgerBody {
         margin-left: 75vw;
+        visibility: visible;
         display: inline;
     }
 
-    #hamburger {
-        font-size: 30px;
-        border: none;
-        background: none;
-        text-decoration: none;
-        color: black;
+    #hamburger div{
+        width: 35px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+        transition: 0.4s;
+        z-index: 999;
+    }
+
+    .open .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+
+    .open .bar2 {
+        opacity: 0;
+    }
+
+    .open .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -8px);
+        transform: rotate(45deg) translate(-6px, -8px);
     }
 
     #mobilePopup {
+        margin-top: 20vh;
         z-index: 99;
         background-color: white;
-        display: hidden;
-        height: 100vh;
+        visibility: hidden;
+        height: 82vh;
         width: 100vw;
         position: absolute;
     }
@@ -240,6 +260,34 @@ footer {
     #mobilePopupClose {
         margin-left: 80vw;
         font-size: 3rem;
+    }
+
+    #mobilePopupList {
+        margin-top: 5vh;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mobileNavItem {
+        font-size: 1.75rem;
+        margin: 3.5vh;
+    }
+
+    #mobilePopupSocialList {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+
+    .social {
+        height: 10vw;
+        width: 10vw;
+        margin: 20px;
     }
 
     main {

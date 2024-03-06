@@ -9,21 +9,34 @@
 <body>
     <header>
         <div id="mobilePopup">
-            <div id="mobilePopupHeader">
-                <h2 id="mobilePopupHeaderText">
-                    Menu
-                </h2>
-                <h4 id="mobilePopupClose">
-                    &times;
-                </h4>
+            <div id="mobilePopupBody">
+                <ol id="mobilePopupList">
+                    <li class="mobileNavItem">About Us</li>
+                    <li class="mobileNavItem">Locations</li>
+                    <li class="mobileNavItem">Menu</li>
+                    <li class="mobileNavItem">Work Here</li>
+                    <li class="mobileNavItem">Plan Your Party</li>
+                </ol>
+            </div>
+            <div id="mobilePopupSocial">
+                <ol id="mobilePopupSocialList">
+                    <li>
+                        <img src="socials/facebook.png" alt="" class="social">
+                    </li>
+                    <li>
+                        <img src="socials/instagram.png" alt="" class="social">
+                    </li>
+                </ol>
             </div>
         </div>
         <div id="header1">
             <img src="logo-jack-custom-font-8-removebg-preview.png" alt="" id="logo">
             <div id="hamburgerBody">
-                <button id="hamburger">
-                    ☰
-                </button>
+                <div id="hamburger" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
             <div id="navList">
                 <li class="navItem">About Us</li>
