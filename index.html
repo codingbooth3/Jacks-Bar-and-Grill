@@ -8,10 +8,22 @@
 </head>
 <body>
     <header>
+        <div id="mobilePopup">
+            <div id="mobilePopupHeader">
+                <h2 id="mobilePopupHeaderText">
+                    Menu
+                </h2>
+                <h4 id="mobilePopupClose">
+                    &times;
+                </h4>
+            </div>
+        </div>
         <div id="header1">
             <img src="logo-jack-custom-font-8-removebg-preview.png" alt="" id="logo">
-            <div id="hamburger">
-                <img src="hamburger.png" alt="" id="hamburgerImage">
+            <div id="hamburgerBody">
+                <button id="hamburger">
+                    ≡
+                </button>
             </div>
             <div id="navList">
                 <li class="navItem">About Us</li>
@@ -75,7 +87,7 @@
                 <h3 id="contactSubHeader" class="flex">
                     Stay up to date with our menu and deals
                 </h3>
-                <a href="" id="emailSignUp" class="flex">Subscribe Here!</a>
+                <a href="" id="emailSignUp">Subscribe Here!</a>
             </div>
         </div>
     </main>
@@ -84,6 +96,6 @@
             &copy;
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 </body>
 </html>

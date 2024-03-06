@@ -31,7 +31,16 @@ header {
     margin-left: 5vw;
 }
 
+#hamburgerBody {
+    display: none;
+}
+
 #hamburger {
+    font-size: 50px;
+    border: none;
+}
+
+#mobilePopup {
     display: none;
 }
 
@@ -137,8 +146,26 @@ main {
     padding-block: 5vh;
     width: auto;
     height: auto;
-    background-color: yellow;
+    background-color: gray;
+    margin-inline: 20vw;
     margin-bottom: 12.5vh;
+}
+
+#emailSignUp {
+    color: black;
+    background-color: white;
+    margin-left: 23vw;
+    margin-right: 23vw;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 23px;
+}
+
+#mobilePopup {
+    display: hidden;
 }
 
 #contactHeader {
@@ -181,16 +208,43 @@ footer {
         display: none;
     }
 
-    #hamburger {
+    #hamburgerBody {
         margin-left: 75vw;
         display: inline;
     }
 
-    #hamburgerImage {
+    #hamburger {
         height: 30px;
+        display: inline;
     }
 
-    main{
+    #mobilePopup {
+        z-index: 99;
+        background-color: white;
+        display: hidden;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+    }
+
+    #mobilePopupHeader {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mobilePopupHeaderText {
+        font-size: 40px;
+        position: absolute;
+    }
+
+    #mobilePopupClose {
+        margin-left: 80vw;
+        font-size: 3rem;
+    }
+
+    main {
         margin-top: 21vh;
     }
 
@@ -251,8 +305,10 @@ footer {
     }
     
     #contactBody {
+        margin-left: 0;
+        margin-right: 0;
         width: 350px;
-        margin-bottom: 5vh;
+        margin-bottom: 2.5vh;
     }
 
     footer {
