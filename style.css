@@ -216,6 +216,8 @@ footer {
     #hamburger {
         height: 30px;
         display: inline;
+        color: black;
+        background: none;
     }
 
     #mobilePopup {
