@@ -211,6 +211,8 @@ footer {
     #hamburger {
         font-size: 30px;
         border: none;
+        background: none;
+        text-decoration: none;
         color: black;
     }
 
