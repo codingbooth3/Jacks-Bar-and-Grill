@@ -35,11 +35,6 @@ header {
     display: none;
 }
 
-#hamburger {
-    font-size: 50px;
-    border: none;
-}
-
 #mobilePopup {
     display: none;
 }
@@ -214,10 +209,9 @@ footer {
     }
 
     #hamburger {
-        height: 30px;
-        display: inline;
+        font-size: 30px;
+        border: none;
         color: black;
-        background: none;
     }
 
     #mobilePopup {
