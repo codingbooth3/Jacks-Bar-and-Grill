@@ -29,6 +29,7 @@ header {
 #logo {
     height: 15vh;
     margin-left: 5vw;
+    cursor: pointer;
 }
 
 #hamburgerBody {
@@ -189,7 +190,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 20vh;
     width: 100%;
     background-color: lightgray;
 }
@@ -202,6 +203,13 @@ footer {
 
 #footerSocial {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.social {
+    margin: 5vh;
+    height: 5vh;
 }
 
 @media (min-width:1440px) {
