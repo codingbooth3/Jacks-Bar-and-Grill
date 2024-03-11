@@ -1,4 +1,4 @@
-export function hamburgerMenu() {
+function hamburgerMenu() {
     const hamburger = document.getElementById("hamburger")
 
     const bar1 = document.querySelector(".bar1")
