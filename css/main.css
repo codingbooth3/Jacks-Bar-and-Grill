@@ -141,7 +141,10 @@ footer {
 
     
     #anchorLogo {
-        display: none;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
     }
 
     header {
@@ -225,18 +228,30 @@ footer {
         font-size: 3rem;
     }
 
+
+
+
     #mobilePopupList {
         margin-top: 5vh;
-        list-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    #menuList {
+        grid-template-columns: 1fr;
     }
 
     .mobileNavItem {
         font-size: 1.75rem;
         margin: 2.5vh;
+        text-decoration: none;
+        color: black;
+        list-style: none;
+
     }
 
     #mobilePopupSocialList {
@@ -328,23 +343,5 @@ footer {
 
     footer {
         display: none;
-    }
-
-    #menuList {
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin-inline: 5vh;
-    }
-
-    .appetizersTitle {
-        font-size: 1.75rem;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }

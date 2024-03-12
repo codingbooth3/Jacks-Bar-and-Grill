@@ -228,7 +228,10 @@ footer {
 @media (max-width:600px) {
 
     #anchorLogo {
-        display: none;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
     }
 
     header {
@@ -318,6 +321,8 @@ footer {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        list-style: none;
+        text-decoration: none;
     }
 
     .mobileNavItem {
@@ -326,6 +331,7 @@ footer {
         text-decoration: none;
         color: black;
         list-style: none;
+
     }
 
     #mobilePopupSocialList {

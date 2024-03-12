@@ -124,7 +124,10 @@ footer {
 
 
     #anchorLogo {
-        display: none;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
     }
 
     header {
@@ -210,16 +213,21 @@ footer {
 
     #mobilePopupList {
         margin-top: 5vh;
-        list-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        list-style: none;
+        text-decoration: none;
     }
 
     .mobileNavItem {
         font-size: 1.75rem;
         margin: 2.5vh;
+        text-decoration: none;
+        color: black;
+        list-style: none;
+
     }
 
     #mobilePopupSocialList {
