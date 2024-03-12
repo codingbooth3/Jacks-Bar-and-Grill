@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar & Grill</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div id="mobilePopup">
+            <div id="mobilePopupBody">
+                <ol id="mobilePopupList">
+                    <li class="mobileNavItem">About Us</li>
+                    <li class="mobileNavItem">Locations</li>
+                    <li class="mobileNavItem">Menu</li>
+                    <li class="mobileNavItem">Work Here</li>
+                    <li class="mobileNavItem">Plan Your Party</li>
+                </ol>
+            </div>
+            <div id="mobilePopupSocial">
+                <ol id="mobilePopupSocialList">
+                    <li>
+                        <a href="https://www.facebook.com/" rel="nofollow" target="_blank" class="mobileLink"><img src="socials/facebook.png" alt="" class="social"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" rel="nofollow" target="_blank" class="mobileLink"><img src="socials/instagram.png" alt="" class="social"></a>
+                    </li>
+                    <li>
+                        <a href="tel:6062268995"><img src="socials/phone-call.png" alt="" class="social"></a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="header1">
+            <a href="index.html" class="navItem" id="anchorLogo"><img src="logo-jack-custom-font-8-removebg-preview.png" alt="" id="logo"></a>
+            <img src="logo-jack-custom-font-8-removebg-preview.png" alt="" id="logoMobile">
+            <div id="hamburgerBody">
+                <div id="hamburger" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div id="navList">
+                <a href="menu.html" class="navItem" id="menuButton">Menu</a>
+                <a href="beverage.html" class="navItem" id="beverageButton">Beverages</a>
+                <a href="work.html" class="navItem" id="workButton">Work Here</a>
+                <a href="party.html" class="navItem" id="partyButton">Plan Your Party</a>
+            </div>
+            <button id="orderNow">Order Now</button>
+        </div>
+        <div id="navBottom"></div>
+    </header>
+    <main>
+        <div id="bodymain">
+            <ul id="menuList">
+                <li id="appetizersContainer" class="appetizers">
+                    <h3 class="appetizersTitle">Appetizers</h3>
+                    <ul class="menuList">
+                        <li>Jalapeno Poppers</li>
+                        <li>Fried Pickles</li>
+                        <li>Chicken Wings (Buffalo,BBQ,Jamaican Jerk)</li>
+                        <li>Meatballs Marinara</li>
+                        <li>Pigs in a blanket</li>
+                        <li>Nachos</li>
+                        <li>Chips and salsa (With Queso, With Quac)</li>
+                        <li>Pretzels and Beer Cheese</li>
+                        <li>Spinach Artichoke Dip</li>
+                        <li>Pimento Cheese Dip</li>
+                        <li>Dippin' Super Platter</li>
+                        <li>Chili Mac</li>
+                        <li>Jalapeno Chili Mac</li>
+                        <li>Dips with Garlic Knots</li>
+                    </ul>
+                </li>
+                <li id="soupContainer">
+                    <h3 class="appetizersTitle">Soups</h3>
+                    <ul id="soupList" class="menuList">
+                        <li>House Made Chili</li>
+                        <li>Soup of the Day- Assigned Daily</li>
+                        <li>Chicken Noodle</li>
+                        <li>Tomato</li>
+                        <li>Potato Leek</li>
+                        <li>Tuscan Soup</li>
+                        <li>Chicken Tortilla</li>
+                        <li>White Chicken Chili</li>
+                        <li>Broccoli Cheese</li>
+                        <li>French Onion</li>
+                    </ul>
+                </li>
+                <li id="saladContainer">
+                    <h3 class="appetizersTitle">Salad</h3>
+                    <ul id="saladList" class="menuList">
+                        <li>House Salad</li>
+                        <li>Caesar Salad</li>
+                        <li>Italian Salad</li>
+                        <li>Southwest Chicken</li>
+                        <li>Chicken Caesar</li>
+                        <li>Black and Bleu</li>
+                    </ul>
+                </li>
+                <li id="smashContainer">
+                    <h3 class="appetizersTitle">Smash Burgers</h3>
+                    <ul id="smashList" class="menuList">
+                        <li>1/4 pound hot dog</li>
+                        <li>1/4 pound chili dog</li>
+                        <li>Steak Sandwich</li>
+                        <li>Fish Sandwich</li>
+                        <li>Chicken Sandwich(grilled or tender)</li>
+                        <li>Southwest Chicken(grilled or tender)</li>
+                        <li>Cajun Chicken(grilled or tender)</li>
+                        <li>BBQ Pork Chop</li>
+                        <li>Meatball Sub</li>
+                        <li>Pizza Sub</li>
+                        <li>Italian Sub</li>
+                    </ul>
+                </li>
+                <li id="pizzaContainer">
+                    <h3 class="appetizersTitle">Pizza</h3>
+                    <h4>10", 12", or 14"</h4>
+                    <ul id="pizzaList" class="menuList">
+                        <li>Cheese</li>
+                        <li>Pepperoni</li>
+                        <li>BBQ Chicken</li>
+                        <li>Italian Pizza</li>
+                        <li>Meat Explosion</li>
+                        <li>Veggie</li>
+                        <li>Build Your Own</li>
+                    </ul>
+                </li>
+                <li id="entreesContainer">
+                    <h3 class="appetizersTitle">Speical Entrees</h3>
+                    <ul id="entreesList" class="menuList">
+                        <li>Sirloin</li>
+                        <li>Chicken</li>
+                        <li>Pork Chop</li>
+                        <li>Fish & Chips</li>
+                        <li>Spaghetti & Meatballs</li>
+                        <li>Meatloaf</li>
+                    </ul>
+                </li>
+                <li id="sidesContainer">
+                    <h3 class="appetizersTitle">Sides</h3>
+                    <ul id="sidesList" class="menuList">
+                        <li>French Fries</li>
+                        <li>Onion Rings</li>
+                        <li>Garden Salad</li>
+                        <li>Caesar Salad</li>
+                        <li>Jalapeno Slaw</li>
+                        <li>Green Beans & Bacon</li>
+                        <li>Mac and Cheese</li>
+                    </ul>
+                </li>
+                <li id="dessertContainer">
+                    <h3 class="appetizersTitle">Desserts</h3>
+                    <ul id="dessertList" class="menuList">
+                        <li>Cheesecake</li>
+                        <li>Key Lime</li>
+                        <li>Death by Chocolate</li>
+                        <li>Apple Pie</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div id="socials">
+            <ol id="footerSocial">
+                <li>
+                    <a href="https://www.facebook.com/" rel="nofollow" target="_blank" class="mobileLink"><img src="socials/facebook.png" alt="" class="social"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" rel="nofollow" target="_blank" class="mobileLink"><img src="socials/instagram.png" alt="" class="social"></a>
+                </li>
+                <li>
+                    <a href="tel:6062268995"><img src="socials/phone-call.png" alt="" class="social"></a>
+                </li>
+            </ol>
+        </div>
+        <div id="copyright">
+            &copy;
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>

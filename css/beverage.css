@@ -78,116 +78,11 @@ header {
 }
 
 main {
-    margin-top: 21vh;
-}
-
-#mainHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#headingImage {
-    margin-top: 2.5vh;
-    height: 100vh;
-}
-
-#cta {
-    margin-top: 10vh;
+    margin-top: 25vh;
+    margin-bottom: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10vh;
-}
-
-#ctaText {
-    font-size: 45px;
-    color: white;
-}
-
-#ctaBody {
-    flex-direction: column;
-    background-color: brown;
-    height: 17.5vh;
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#special {
-    margin-top: 2vh;
-    margin-bottom: 3vh;
-}
-
-#menuBody {
-    gap: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 90vw;
-    height: auto;
-    margin-left: 5vw;
-}
-
-.menuBodyItem {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.menuImage {
-    height: 20vw;
-    width: 30vw;
-}
-
-#contactBody {
-    margin-top: 10vh;
-    padding-block: 5vh;
-    width: auto;
-    height: auto;
-    background-color: gray;
-    margin-inline: 20vw;
-    margin-bottom: 12.5vh;
-}
-
-#emailSignUp {
-    color: black;
-    background-color: white;
-    margin-left: 23vw;
-    margin-right: 23vw;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2vh;
-    font-size: 23px;
-}
-
-#mobilePopup {
-    display: hidden;
-}
-
-#contactHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#location {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10vh;
-}
-
-#locationFrame {
-    width: 60vw;
-    height: 50vh;
 }
 
 footer {
@@ -217,6 +112,7 @@ footer {
     height: 5vh;
 }
 
+
 @media (min-width:1440px) {
     #orderNow {
         padding-block: 2.5px;
@@ -227,6 +123,7 @@ footer {
 
 @media (max-width:600px) {
 
+   
     #anchorLogo {
         display: none;
     }
