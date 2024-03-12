@@ -314,7 +314,6 @@ footer {
 
     #mobilePopupList {
         margin-top: 5vh;
-        list-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -324,6 +323,9 @@ footer {
     .mobileNavItem {
         font-size: 1.75rem;
         margin: 2.5vh;
+        text-decoration: none;
+        color: black;
+        list-style: none;
     }
 
     #mobilePopupSocialList {
