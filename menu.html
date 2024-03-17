@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar & Grill</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="icon" type="image" href="Orange_and_Red_Bold_Grilled_Club_Restaurant_Logo-removebg-preview.png">
 </head>
 <body>
     <header>
@@ -49,114 +50,558 @@
             <button id="orderNow">Order Now</button>
         </div>
         <div id="navBottom"></div>
+        <div id="mobileMenuBackground">
+            <div id="mobileMenuBackgroundList" class="center">
+                <ul id="mobileMenuList">
+                    <li id="allCategoriesMobile" class="mobileMenuListItem">All Categories</li>
+                    <li id="appetizersMobile" class="mobileMenuListItem">Appetizers</li>
+                    <li id="soupsMobile" class="mobileMenuListItem">Soups</li>
+                    <li id="saladsMobile" class="mobileMenuListItem">Salads</li>
+                    <li id="burgersMobile" class="mobileMenuListItem">Smash Burgers</li>
+                    <li id="sandwichesMobile" class="mobileMenuListItem">Sandwiches</li>
+                    <li id="pizzaMobile" class="mobileMenuListItem">Pizza</li>
+                    <li id="entreesMobile" class="mobileMenuListItem">Special Entrees</li>
+                    <li id="sidesMobile" class="mobileMenuListItem">Sides</li>
+                    <li id="dessertsMobile" class="mobileMenuListItem">Desserts</li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
+        <div id="mobileContainer">
+            <div id="mobileContainerHamburger">
+                <div class="bar4"></div>
+                <div class="bar5"></div>
+                <div class="bar6"></div>
+            </div>
+        </div>
         <div id="bodymain">
+            <ul id="menuSelectorContainer">
+                <li class="menuSelector">
+                    <input type="radio" name="options" id="optionAll" value="optionAll" checked>
+                    <label for="optionAll">All Categories</label>
+                </li>
+                <li class="menuSelector">
+                    <input type="radio" name="options" id="appetizersOption" value="appetizersOption">
+                    <label for="appetizersOption">Appetizers</label>
+                </li>
+                <li class="menuSelector">
+                    <input type="radio" name="options" id="soupsOption" value="soupsOption">
+                    <label for="soupsOption">Soups</label>
+                </li>
+                <li class="menuSelector">
+                    <input type="radio" name="options" id="saladOption" value="saladOption">
+                    <label for="saladsOption">Salads</label>
+                </li>
+                <li class="menuSelector">
+                    <input type="radio" name="options" id="burgerOption" value="burgerOption">
+                    <label for="burgerOption">Smash Burgers</label>
+                </li>
+                <li class="menuSelector">
+                    <input type="radio" name="options" id="sandwichOption" value="sandwichOption">
+                    <label for="sandwichOption">Sandwiches</label>
+                </li>
+                <li class="menuSelector">
+                    <input type="radio" name="options" id="pizzaOption" value="pizzaOption">
+                    <label for="pizzaOption">Pizza</label>
+                </li>
+                <li class="menuSelector">
+                    <input type="radio" name="options" id="entreeOption" value="entreeOption">
+                    <label for="entreeOption">Special Entrees</label>
+                </li>
+                <li class="menuSelector">
+                    <input type="radio" name="options" id="sidesOption" value="sidesOption">
+                    <label for="sidesOption">Sides</label>
+                </li>
+                <li class="menuSelector">
+                    <input type="radio" name="options" id="dessertOption" value="dessertOption">
+                    <label for="dessertOption">Desserts</label>
+                </li>
+            </ul>
             <ul id="menuList">
                 <li id="appetizersContainer" class="appetizers">
-                    <h3 class="appetizersTitle">Appetizers</h3>
+                    <h3 class="menuTitle">Appetizers</h3>
                     <ul class="menuList">
-                        <li>Jalapeno Poppers</li>
-                        <li>Fried Pickles</li>
-                        <li>Chicken Wings (Buffalo,BBQ,Jamaican Jerk)</li>
-                        <li>Meatballs Marinara</li>
-                        <li>Pigs in a blanket</li>
-                        <li>Nachos</li>
-                        <li>Chips and salsa (With Queso, With Quac)</li>
-                        <li>Pretzels and Beer Cheese</li>
-                        <li>Spinach Artichoke Dip</li>
-                        <li>Pimento Cheese Dip</li>
-                        <li>Dippin' Super Platter</li>
-                        <li>Chili Mac</li>
-                        <li>Jalapeno Chili Mac</li>
-                        <li>Dips with Garlic Knots</li>
+                        <li class="menuHeader">
+                            Jalapeno Poppers $12
+                        </li>
+                        <li class="subHeader">
+                            Jalapeno poppers stuffed with cream cheese then breaded and deep fried to a golden and served with ranch dressing.
+                        </li>
+                        <li class="menuHeader">
+                            Fried Pickles $10
+                        </li>
+                        <li class="subHeader">
+                            Tart dill pickles are breaded and deep fried to a golden brown and served with ranch dressing.
+                        </li>
+                        <li class="menuHeader">
+                            Chicken Wings $12
+                        </li>
+                        <li class="menuHeader" id="wingMenu">
+                            Buffalo, BBQ, Jamaican Jerk, Chinese Five, Curry, or Garlic Parmesan
+                        </li>
+                        <li class="subHeader">
+                            Nearly a pound of jumbo chicken wings, seasoned and deep fried crispy then tossed hot in your choice of sauce then served with celery and carrots with your choice of ranch or bleu cheese.
+                        </li>
+                        <li class="menuHeader">
+                            Meatballs Marinara $12
+                        </li>
+                        <li class="subHeader">
+                            A half pound of meatballs smothered in our own marinara sauce and mozzarella cheese.
+                        </li>
+                        <li class="menuHeader">
+                            Pigs in a blanket $8
+                        </li>
+                        <li class="subHeader">
+                            Our quarter pound hot dog rolled in our own signature pizza crust and toasted golden brown served with ketchup and spicy mustard.
+                        </li>
+                        <li class="menuHeader">
+                            Nachos with Chicken - $12
+                        </li>
+                        <li class="subHeader">
+                            A heaping pile of crispy nacho chips smothered in chicken,spicy pinto beans, onions, jalapeno peppers, queso and meleted cheddar cheese.
+                        </li>
+                        <li class="menuHeader">
+                            Nachos with Steak - $14
+                        </li>
+                        <li class="subHeader">
+                            A heaping pile of crispy nacho chips smothered in steak,spicy pinto beans, onions, jalapeno peppers, queso and meleted cheddar cheese.
+                        </li>
+                        <li class="menuHeader">
+                            Chips and salsa $6
+                        </li>
+                        <li class="menuHeader">
+                            Chips and salsa with Queso $8
+                        </li>
+                        <li class="menuHeader">
+                            Chicken Tenders $10
+                        </li>
+                        <li class="subHeader">
+                            Chicken breast tenders deep fried to perfection and served with your choice of sauce (Buffalo, BBQ, Jmaican Jerk, Chinese Five Spice, Curry, Garlic Parmesan, or Ranch)
+                        </li>
+                        <li class="menuHeader">
+                            Beer Cheese and Garlic Knots $8
+                        </li>
+                        <li class="subHeader">
+                            Locally sourced Kentucky Beer Cheese served with our signature garlic knots.
+                        </li>
+                        <li class="menuHeader">
+                            Spinach Artichoke Dip $8
+                        </li>
+                        <li class="subHeader">
+                            A savory combination of spinach, artichokes, cream and parmesan cheeses served bubbling hot with our signature garlic knots.
+                        </li>
+                        <li class="menuHeader">
+                            Pimento Cheese Dip $7
+                        </li>
+                        <li class="subHeader">
+                            Locally sourced pimento cheese served with Jack's Garlic Knots.
+                        </li>
+                        <li class="menuHeader">
+                            Dippin'  Platter $14
+                        </li>
+                        <li class="subHeader">
+                            A heaping platter of Hot Queso, Spinach Artichoke Dip, Pimento Cheese, and Beer Cheese with Jack's Garlic Knots.
+                        </li>
+                        <li class="menuHeader">
+                            Chili Mac $9
+                        </li>
+                        <li class="subHeader">
+                            Our house made Cheesy mac smothered with our House Chili and cheddar cheese.
+                        </li>
+                        <li class="menuHeader">
+                            Jalapeno Chili Mac $10
+                        </li>
+                        <li class="subHeader">
+                            Spice it up! Our big bowl of chili mac with fresh sliced jalapenos.
+                        </li>
                     </ul>
                 </li>
                 <li id="soupContainer">
-                    <h3 class="appetizersTitle">Soups</h3>
+                    <h3 class="menuTitle">Soups</h3>
                     <ul id="soupList" class="menuList">
-                        <li>House Made Chili</li>
-                        <li>Soup of the Day- Assigned Daily</li>
-                        <li>Chicken Noodle</li>
-                        <li>Tomato</li>
-                        <li>Potato Leek</li>
-                        <li>Tuscan Soup</li>
-                        <li>Chicken Tortilla</li>
-                        <li>White Chicken Chili</li>
-                        <li>Broccoli Cheese</li>
-                        <li>French Onion</li>
+                        <li class="menuHeader">
+                            House Made Chili $6
+                        </li>
+                        <li class="subHeader">
+                            An obscene amount of our signature ground beef blend is slow simmered with pinto beans, diced onions, green peppers, jalapeno peppers, and southwestern spiced then served with cheddar cheese and garlic knots.
+                        </li>
+                        <li class="menuHeader">
+                            Soup of the Day - Assigned Daily
+                        </li>
+                        <li class="menuHeader">
+                            Chicken Noodle
+                        </li>
+                        <li class="subHeader">
+
+                        </li>
+                        <li class="menuHeader">
+                            Tomato
+                        </li>
+                        <li class="subHeader">
+
+                        </li>
+                        <li class="menuHeader">
+                            Potato Leek
+                        </li>
+                        <li class="subHeader">
+
+                        </li>
+                        <li class="menuHeader">
+                            Tuscan Soup
+                        </li>
+                        <li class="subHeader">
+
+                        </li>
+                        <li class="menuHeader">
+                            Chicken Tortilla
+                        </li>
+                        <li class="subHeader">
+
+                        </li>
+                        <li class="menuHeader">
+                            White Chicken Chili
+                        </li>
+                        <li class="subHeader">
+
+                        </li>
+                        <li class="menuHeader">
+                            Broccoli Cheese
+                        </li>
+                        <li class="subHeader">
+
+                        </li>
+                        <li class="menuHeader">
+                            French Onion
+                        </li>
+                        <li class="subHeader">
+
+                        </li>
                     </ul>
                 </li>
                 <li id="saladContainer">
-                    <h3 class="appetizersTitle">Salad</h3>
+                    <h3 class="menuTitle">Salads</h3>
                     <ul id="saladList" class="menuList">
-                        <li>House Salad</li>
-                        <li>Caesar Salad</li>
-                        <li>Italian Salad</li>
-                        <li>Southwest Chicken</li>
-                        <li>Chicken Caesar</li>
-                        <li>Black and Bleu</li>
+                        <li class="menuHeader">
+                            Dressings
+                        </li>
+                        <li id="dressing">Italian Vinaigrette, Balsamic Vinaigrette, Ranch, Chipotle Ranch, Bleu Cheese, or Thousand Island</li>
+                        <li class="menuHeader">
+                            House Salad $4 / $7
+                        </li>
+                        <li class="subHeader">
+                            A mix of artisan lettuce greens with cucumbers, tomatoes, banana peppers, and mushrooms.
+                        </li>
+                        <li class="menuHeader">
+                            Caesar Salad $4 / $8
+                        </li>
+                        <li class="subHeader">
+                            Romaine lettuce and house made croutons tossed in traditional Caesar dressing.
+                        </li>
+                        <li class="menuHeader">
+                            Italian Salad $13
+                        </li>
+                        <li class="subHeader">
+                            Mixed greens, capicola, salami, pepperoni, sweet peppers, banana peppers, sliced onions, and mozzarella cheese with Italian dressing.
+                        </li>
+                        <li class="menuHeader">
+                            Fajita Chicken $12
+                        </li>
+                        <li class="subHeader">
+                            House greens topped with onions, sweet peppers, tomatoes, jalapenos, pinto beans, and grilled chicken.
+                        </li>
+                        <li class="menuHeader">
+                            Chicken Caesar $12
+                        </li>
+                        <li class="subHeader">
+                            Our caesar salad topped with grilled chicken.
+                        </li>
+                        <li class="menuHeader">
+                            Italian Salad $13
+                        </li>
+                        <li class="subHeader">
+                            Mixed greens, capicola, salami, peperoni, sweet peppers, banana peppers, sliced onions, and mozzarella cheese with Italian Dressing.
+                        </li>
+                        <li class="menuHeader">
+                            Black and Bleu $14
+                        </li>
+                        <li class="subHeader">
+                            House greens with tomatoes, cucumbers, and mushrooms, topped with sirloin cooked to order and Bleu Cheese.
+                        </li>
                     </ul>
                 </li>
                 <li id="smashContainer">
-                    <h3 class="appetizersTitle">Smash Burgers</h3>
+                    <h3 class="menuTitle">Smash Burgers $10 / $13</h3>
                     <ul id="smashList" class="menuList">
-                        <li>1/4 pound hot dog</li>
-                        <li>1/4 pound chili dog</li>
-                        <li>Steak Sandwich</li>
-                        <li>Fish Sandwich</li>
-                        <li>Chicken Sandwich(grilled or tender)</li>
-                        <li>Southwest Chicken(grilled or tender)</li>
-                        <li>Cajun Chicken(grilled or tender)</li>
-                        <li>BBQ Pork Chop</li>
-                        <li>Meatball Sub</li>
-                        <li>Pizza Sub</li>
-                        <li>Italian Sub</li>
+                        <li class="subHeader">
+                            Our classic smash burgers are made with our signature ground beef blend grilled on a bed of onions and served with French Fries or Onion Rings.
+                        </li>
+                        <li class="menuHeader">
+                            American Classic
+                        </li>
+                        <li class="subHeader">
+                            Pickles, onion, tomatoes, lettuce, and your choice of cheese.
+                        </li>
+                        <li class="menuHeader">
+                            Bacon BBQ Burger
+                        </li>
+                        <li class="subHeader">
+                            Bacon, cheese, House BBQ sauce, and onion rings.
+                        </li>
+                        <li class="menuHeader">
+                            South By Southwest
+                        </li>
+                        <li class="subHeader">
+                            Topped with cheddar cheese, salsa, jalapenos, tomatoes, and green peppers.
+                        </li>
+                        <li class="menuHeader">
+                            Allen 5 Spice Burger
+                        </li>
+                        <li class="subHeader">
+                            5 spice burger, Jalapeno slaw and tomatoes.
+                        </li>
+                        <li class="menuHeader">
+                            Beer Cheese Smash Burger
+                        </li>
+                        <li class="subHeader">
+                            Carmalized onions, cheddar cheese, and beer cheese.
+                        </li>
+                        <li class="menuHeader">
+                            Pimento Cheese Smash Burger
+                        </li>
+                        <li class="subHeader">
+                            Pimento cheese, pickles, and onions.
+                        </li>
+                        <li class="menuHeader">
+                            Jack's Famous
+                        </li>
+                        <li class="subHeader">
+                            Cheeseburger with 1000 Island, lettuce, pickles, and onions.
+                        </li>
+                    </ul>
+                </li>
+                <li id="sandwichContainer">
+                    <h3 class="menuTitle">Sandwiches</h3>
+                    <ul class="menuList">
+                        <li class="menuHeader">
+                            1/4 pound hot dog $8
+                        </li>
+                        <li class="subHeader">
+                            Our huge quarter pound hot dog, seared on the griddle served with a warm bun.
+                        </li>
+                        <li class="menuHeader">
+                            1/4 pound chili dog $10
+                        </li>
+                        <li class="subHeader">
+                            Our quarter pound hot dog smothered in our house chili and shredded cheddar cheese.
+                        </li>
+                        <li class="menuHeader">
+                            Chicago Style Hot Dog $10
+                        </li>
+                        <li class="subHeader">
+                            Our quarter pound hot dog topped with tomatoes, mustard, pickles, relish, and banana peppers.
+                        </li>
+                        <li class="menuHeader">
+                            Steak Sandwich $14
+                        </li>
+                        <li class="subHeader">
+                            Sirloin Steak, cooked to order, topped with provolone cheese and sauteed onions and mushrooms.
+                        </li>
+                        <li class="menuHeader">
+                            Fish Sandwich $12
+                        </li>
+                        <li class="subHeader">
+                            Our succulent batter breaded cod with tartar sauce, lettuce, and tomatoes.
+                        </li>
+                        <li class="menuHeader chicken">
+                            Chicken Sandwich (grilled or tender) $12
+                        </li>
+                        <li class="subHeader">
+                            Chicken breast, grilled or fried, on a toasted bun with lettuce, tomatoes, and mayonnaise.
+                        </li>
+                        <li class="menuHeader chicken">
+                            Southwest Chicken(grilled or tender) $14
+                        </li>
+                        <li class="subHeader">
+                            Chicken brest, grilled or fried, on toasted bun with lettuce, tomatoes and queso.
+                        </li>
+                        <li class="menuHeader">
+                            Cajun Chicken(grilled) $12
+                        </li>
+                        <li class="subHeader">
+                            Blackened and grilled Chicken breast, on a toasted bun with lettuce, tomatoes, and banana peppers.
+                        </li>
+                        <li class="menuHeader">
+                            BBQ Pork Chop
+                        </li>
+                        <li class="subHeader">
+                            Our thick cut pork chop on a toasted bun with house BBQ sauce and caramelized onions.
+                        </li>
+                        <li class="menuHeader">
+                            Meatball Sub
+                        </li>
+                        <li class="subHeader">
+                            Our house made meatballs, marinara sauce and mozzarella cheese on a sub bun toasted to perfection.
+                        </li>
+                        <li class="menuHeader">
+                            Pizza Sub
+                        </li>
+                        <li class="subHeader">
+                            Our toasted sub bun with marinara, mozarella cheese, pepperoni, and italian sausage.
+                        </li>
                     </ul>
                 </li>
                 <li id="pizzaContainer">
-                    <h3 class="appetizersTitle">Pizza</h3>
-                    <h4>10", 12", or 14"</h4>
+                    <h3 class="menuTitle">Pizza</h3>
+                    <h3 class="center">10" - $9</h3>
+                    <h3 class="center">12" - $12</h3>
+                    <h3 class="center">14" - $15</h3>
                     <ul id="pizzaList" class="menuList">
-                        <li>Cheese</li>
-                        <li>Pepperoni</li>
-                        <li>BBQ Chicken</li>
-                        <li>Italian Pizza</li>
-                        <li>Meat Explosion</li>
-                        <li>Veggie</li>
-                        <li>Build Your Own</li>
+                        <li class="menuHeader">
+                            Cheese
+                        </li>
+                        <li class="subHeader">
+                            Indulge in the savory allure of our signature Cheese Pizza.
+                        </li>
+                        <li class="menuHeader">
+                            Pepperoni
+                        </li>
+                        <li class="subHeader">
+                            Indulge in the savory allure of our signature Pepperoni Pizza.
+                        </li>
+                    <h3 class="menuTitle center" id="specialPizza">Special Pizzas</h3>
+                    <h3 class="center">10" - $12</h3>
+                    <h3 class="center">12" - $15</h3>
+                    <h3 class="center">14" - $18</h3>
+                        <li class="menuHeader">
+                            BBQ Chicken
+                        </li>
+                        <li class="subHeader">
+                            BBQ, grilled chicken, pepperoncini, caramelized onions.
+                        </li>
+                        <li class="menuHeader">
+                            Meat Explosion
+                        </li>
+                        <li class="subHeader">
+                            Pepperoni, Italian Sausage, and Bacon.
+                        </li>
+                        <li class="menuHeader">
+                            Veggie
+                        </li>
+                        <li class="subHeader">
+                            Onions, green peppers, sweet peppers, olives, mushrooms, and banana peppers.
+                        </li>
+                        <li class="menuHeader">
+                            The Works
+                        </li>
+                        <li class="subHeader">
+                            Pepperoni, sausage, green peppers, mushrooms, onions, olives, and banana peppers.
+                        </li>
+                        <li class="menuHeader">
+                            Buffalo Chicken
+                        </li>
+                        <li class="subHeader">
+                            Buffalo chicken sauce, grilled chicken, onions, and ranch drizzle.
+                        </li>
+                        <li class="menuHeader center">Build Your Own</li>
+                        <h3 class="miniHeader center">Meats add $2</h3>
+                        <li class="subHeader center">
+                            Pepperoni
+                        </li>
+                        <li class="subHeader center">
+                            Salami
+                        </li>
+                        <li class="subHeader center">
+                            Capicola
+                        </li>
+                        <li class="subHeader center">
+                            Italian Sausage
+                        </li>
+                        <li class="subHeader center">
+                            Ground Beef
+                        </li>
+                        <li class="subHeader center">
+                            Meatballs
+                        </li>
+                        <h3 class="miniHeader center">Veggies add $1</h3>
+                        <li class="subHeader center">
+                            Onions
+                        </li>
+                        <li class="subHeader center">
+                            Tomatoes
+                        </li>
+                        <li class="subHeader center">
+                            Green Peppers
+                        </li>
+                        <li class="subHeader center">
+                            Sweet Peppers
+                        </li>
+                        <li class="subHeader center">
+                            Mushrooms
+                        </li>
+                        <li class="subHeader center">
+                            Jalapenos
+                        </li>
+                        <li class="subHeader center">
+                            Olives
+                        </li>
                     </ul>
                 </li>
                 <li id="entreesContainer">
-                    <h3 class="appetizersTitle">Speical Entrees</h3>
+                    <h3 class="menuTitle">Special Entrees</h3>
+                    <h3 class="entree">Served with your choice of 2 sides</h3>
                     <ul id="entreesList" class="menuList">
-                        <li>Sirloin</li>
-                        <li>Chicken</li>
-                        <li>Pork Chop</li>
-                        <li>Fish & Chips</li>
-                        <li>Spaghetti & Meatballs</li>
-                        <li>Meatloaf</li>
+                        <li class="menuHeader">
+                            Jack's Meatloaf $16
+                        </li>
+                        <li class="subHeader">
+                            House made with our signature ground beef blend, onions, spices served with mashed potatoes and mushroom gravy.
+                        </li>
+                        <li class="menuHeader">
+                            Sirloin Steak $18
+                        </li>
+                        <li class="subHeader">
+                            An 8 ounce sirloin stead, cooked to order with a side of sauteed mushrooms.
+                        </li>
+                        <li class="menuHeader">
+                            Chicken $16
+                        </li>
+                        <li class="subHeader">
+                            A full Chicken Breast, topped with sauteed onions and sweet peppers.
+                        </li>
+                        <li class="menuHeader">
+                            Pork Chop $17
+                        </li>
+                        <li class="subHeader">
+                            Our thick cut Pork Chop, cooked to perfection and smothered in caramelized onions and BBQ sauce.
+                        </li>
+                        <li class="menuHeader">
+                            Fish & Chips $16
+                        </li>
+                        <li class="subHeader">
+                            A large portion of our deep fried cod with tartar sauce, fries, and jalapeno slaw.
+                        </li>
                     </ul>
                 </li>
                 <li id="sidesContainer">
-                    <h3 class="appetizersTitle">Sides</h3>
+                    <h3 class="menuTitle">Sides - $4</h3>
                     <ul id="sidesList" class="menuList">
-                        <li>French Fries</li>
-                        <li>Onion Rings</li>
-                        <li>Garden Salad</li>
-                        <li>Caesar Salad</li>
-                        <li>Jalapeno Slaw</li>
-                        <li>Green Beans & Bacon</li>
-                        <li>Mac and Cheese</li>
+                        <li class="menuHeader">French Fries</li>
+                        <li class="menuHeader">Onion Rings</li>
+                        <li class="menuHeader">Garden Salad</li>
+                        <li class="menuHeader">Caesar Salad</li>
+                        <li class="menuHeader">Jalapeno Slaw</li>
+                        <li class="menuHeader">Green Beans & Bacon</li>
+                        <li class="menuHeader">Mac and Cheese</li>
                     </ul>
                 </li>
                 <li id="dessertContainer">
-                    <h3 class="appetizersTitle">Desserts</h3>
+                    <h3 class="menuTitle">Desserts - $6</h3>
                     <ul id="dessertList" class="menuList">
-                        <li>Cheesecake</li>
-                        <li>Key Lime</li>
-                        <li>Death by Chocolate</li>
-                        <li>Apple Pie</li>
+                        <li class="menuHeader">Cheesecake</li>
+                        <li class="menuHeader">Key Lime</li>
+                        <li class="menuHeader">Death by Chocolate</li>
+                        <li class="menuHeader apple">Apple Pie</li>
                     </ul>
                 </li>
             </ul>
@@ -181,5 +626,6 @@
         </div>
     </footer>
     <script src="js/hamburger.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
