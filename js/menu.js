@@ -28,6 +28,56 @@ function scrollToTop() {
     });
 }
 
+function saladImage() {
+    hamburgerMenu.classList.toggle("open")
+
+        if (hamburgerMenu.classList.contains("open")) {
+            background.style.visibility = "visible";
+            background.style.visibility = "hidden";
+
+        } else {
+            background.style.visibility = "hidden";
+        }
+        scrollToTop()
+        appetizersContainer.classList.add("hidden")
+        soupContainer.classList.add("hidden")
+        saladContainer.classList.remove("hidden")
+        smashContainer.classList.add("hidden")
+        sandwichContainer.classList.add("hidden")
+        pizzaContainer.classList.add("hidden")
+        entreesContainer.classList.add("hidden")
+        sidesContainer.classList.add("hidden") 
+        dessertContainer.classList.add("hidden")
+}
+
+const menuSelectors = document.querySelectorAll('.menuSelector');
+
+    menuSelectors.forEach(menuSelector => {
+        menuSelector.addEventListener("click", () => {
+            menuSelectors.forEach(item => item.classList.remove('selected'));
+            
+            menuSelector.classList.add('selected');
+        });
+    });
+
+
+checkOrientation();
+
+menuSelectorContainer = document.getElementById("menuSelectorContainer")
+
+window.addEventListener("resize", checkOrientation);
+
+function checkOrientation() {
+    if (/Mobi/.test(navigator.userAgent) && window.innerWidth > window.innerHeight) {
+        menuSelectorContainer.style.display = "none";
+    } else {
+        menuSelectorContainer.style.display = ""; 
+    }
+}
+
+menuSelectorContainer = document.getElementById("menuSelectorContainer")
+
+
 function menuBurger() {
     const hamburgerMenu = document.getElementById("mobileContainerHamburger")
 

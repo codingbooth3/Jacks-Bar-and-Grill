@@ -10,7 +10,7 @@
 }
 
 header {
-    background-color: white;
+    background-color: rgba(0,51,171,255);
     position: fixed;
     top: 0;
     height: 20vh;
@@ -49,6 +49,10 @@ header {
     display: hidden;
 }
 
+.selected {
+    color: blue;
+}
+
 #navList {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -62,12 +66,13 @@ header {
 .navItem {
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color: #b7aaaa;
 }
 
 #orderNow {
-    background-color: black;
-    color: white;
+    border: none;
+    background-color: #b7aaaa;
+    color: black;
     padding-block: 10px;
     padding-inline: 5px;
     border-radius: 20px;
@@ -153,6 +158,7 @@ main {
 }
 
 #menuSelectorContainer {
+    cursor: pointer;
     list-style: none;
     text-decoration: none;
     position: fixed;
@@ -215,7 +221,7 @@ footer {
     }
 
     #logo {
-        height: 140px;
+        height: 120px;
         position: absolute;
     }
 
@@ -306,7 +312,7 @@ footer {
         bottom: 0;
         height: 10vh;
         width: 100vw;
-        background-color: gray;
+        background-color: rgb(192, 192, 192);
         z-index: 99999;
     }
 
@@ -384,6 +390,11 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
+    #menuSelectorContainer {
+        visibility: hidden;
+    }
+
 
     #wingMenu {
         font-size: 1.2rem;

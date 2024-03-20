@@ -10,7 +10,7 @@
 }
 
 header {
-    background-color: white;
+    background-color: rgba(0,51,171,255);
     position: fixed;
     top: 0;
     height: 20vh;
@@ -58,12 +58,13 @@ header {
 .navItem {
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color: #b7aaaa;
 }
 
 #orderNow {
-    background-color: black;
-    color: white;
+    border: none;
+    background-color: #b7aaaa;
+    color: black;
     padding-block: 10px;
     padding-inline: 5px;
     border-radius: 20px;
@@ -138,7 +139,7 @@ footer {
     }
 
     #logo {
-        height: 140px;
+        height: 120px;
         position: absolute;
     }
 

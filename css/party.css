@@ -10,7 +10,7 @@
 }
 
 header {
-    background-color: white;
+    background-color: rgba(0,51,171,255);
     position: fixed;
     top: 0;
     height: 20vh;
@@ -58,12 +58,13 @@ header {
 .navItem {
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color: #b7aaaa;
 }
 
 #orderNow {
-    background-color: black;
-    color: white;
+    border: none;
+    background-color: #b7aaaa;
+    color: black;
     padding-block: 10px;
     padding-inline: 5px;
     border-radius: 20px;
@@ -78,34 +79,95 @@ header {
 }
 
 main {
-    margin-top: 21vh;
+    margin-top: 25vh;
     margin-bottom: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#mainBody {
-    height: 100vh;
-    width: 100vw;
+#workBody {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 10vh;
 }
 
-#partyBody {
+#workHeader {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#party {
     color: black;
-    text-decoration: none;
+    font-size: 35px;
 }
 
-#partyHeading {
-    font-size: 30px;
+#workSubHeader {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(90, 90, 90);
+}
+
+#section1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#section3 {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#section4 {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formFlex {
+    display: flex;
+    flex-direction: column;
+    margin: 2vh;
+}
+
+.input {
+    padding: 1vh;
+}
+
+#submit {
+    width: 10vw;
+    height: 5vh;
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    height: 5vh;
+    width: 7.5vw;
 }
 
 footer {
@@ -145,7 +207,6 @@ footer {
 
 @media (max-width:600px) {
 
-
     #anchorLogo {
         display: flex;
         position: absolute;
@@ -160,7 +221,7 @@ footer {
     }
 
     #logo {
-        height: 140px;
+        height: 120px;
         position: absolute;
     }
 
@@ -168,6 +229,34 @@ footer {
         display: inline;
         height: 140px;
         position: absolute;
+    }
+
+    #workSubHeader {
+        width: 80vw;
+        font-size: .75rem;
+    }
+
+    #workBody {
+        background-color: rgb(217, 215, 215);
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #section1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #submit {
+        width: 20vw;
+        height: 5vh;
+        border-radius: 20px;
     }
 
     #navList {
