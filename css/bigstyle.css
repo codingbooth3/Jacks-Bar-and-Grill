@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: rgba(0,51,171,255);
+    position: fixed;
+    top: 0;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19vh;
+}
+
+#logo {
+    height: 15vh;
+    margin-left: 5vw;
+}
+
+#logoMobile {
+    display: none;
+}
+
+#hamburgerBody {
+    visibility: hidden;
+}
+
+#mobilePopup {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#navList {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-left: 5vw;
+    justify-content: space-evenly;
+    list-style: none;
+    display: flex;
+    width: 60vw;
+}
+
+.navItem {
+    text-decoration: none;
+    cursor: pointer;
+    color: #b7aaaa;
+}
+
+#orderNow {
+    background-color: #b7aaaa;
+    color: black;
+    padding-block: 10px;
+    padding-inline: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+#navBottom {
+    margin-top: 2.5vh;
+    height: 2px;
+    background-color: black;
+    width: 100%;
+}
+
+main {
+    margin-top: 21vh;
+}
+
+#mainHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#headingImage {
+    margin-top: 2.5vh;
+    height: 100vh;
+}
+
+#cta {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+#ctaText {
+    font-size: 45px;
+    color: white;
+}
+
+#ctaBody {
+    flex-direction: column;
+    background-color: rgba(0,51,171,255);
+    height: 17.5vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#special {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+#menuBody {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 90vw;
+    height: auto;
+    margin-left: 5vw;
+}
+
+.menuBodyItem {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menuImage {
+    height: 20vw;
+    width: 30vw;
+}
+
+#contactBody {
+    margin-top: 10vh;
+    padding-block: 5vh;
+    width: auto;
+    height: auto;
+    background-color: rgba(0,51,171,255);
+    margin-inline: 20vw;
+    margin-bottom: 12.5vh;
+}
+
+#emailSignUp {
+    color: black;
+    background-color: white;
+    margin-left: 23vw;
+    margin-right: 23vw;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 23px;
+}
+
+#mobilePopup {
+    display: hidden;
+}
+
+#contactHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#location {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+#locationFrame {
+    width: 60vw;
+    height: 60vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    background-color: lightgray;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#footerSocial {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.social {
+    margin: 5vh;
+    height: 5vh;
+}
+
+@media (min-width:1440px) {
+    #orderNow {
+        padding-block: 2.5px;
+        padding-inline: 15px;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width:600px) {
+
+    #anchorLogo {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        z-index: 9999;
+        height: 20vh;
+        position: fixed;
+    }
+
+    #logo {
+        height: 120px;
+        position: absolute;
+    }
+
+    #logoMobile {
+        display: inline;
+        height: 140px;
+        position: absolute;
+    }
+
+    #navList {
+        display: none;
+    }
+
+    #orderNow {
+        display: none;
+    }
+
+    #hamburgerBody {
+        margin-left: 75vw;
+        visibility: visible;
+        display: inline;
+    }
+
+    #hamburger div{
+        width: 35px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+        transition: 0.4s;
+        z-index: 999;
+    }
+
+    .open .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+
+    .open .bar2 {
+        opacity: 0;
+    }
+
+    .open .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -8px);
+        transform: rotate(45deg) translate(-6px, -8px);
+    }
+
+    #mobilePopup {
+        margin-top: 20vh;
+        z-index: 99;
+        background-color: white;
+        visibility: hidden;
+        height: 82vh;
+        width: 100vw;
+        position: absolute;
+    }
+
+    #mobilePopupHeader {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mobilePopupHeaderText {
+        font-size: 40px;
+        position: absolute;
+    }
+
+    #mobilePopupClose {
+        margin-left: 80vw;
+        font-size: 3rem;
+    }
+
+    #mobilePopupList {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .mobileNavItem {
+        font-size: 1.75rem;
+        margin: 2.5vh;
+        text-decoration: none;
+        color: black;
+        list-style: none;
+
+    }
+
+    #mobilePopupSocialList {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+
+    .mobileLink {
+        height: 40px;
+        width: 40px;
+    }
+
+    .social {
+        cursor: pointer;
+        height: 10vw;
+        width: 10vw;
+        margin: 20px;
+    }
+
+    main {
+        margin-top: 21vh;
+    }
+
+    #headerText {
+        font-size: 20px;
+    }
+
+
+    #headingImage {
+        height: 200px;
+        width: 500px;
+        max-width: 80vw;
+    }
+
+    #menuBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cta {
+        margin-top: 2vh;
+    }
+
+    #ctaBody {
+        height: auto;
+    }
+
+    .menuImage {
+        height: 250px;
+        width: 300px;
+    }
+
+    #ctaText {
+        font-size: 20px;
+    }
+
+    #flex, #navBottom {
+        display: none;
+        margin-bottom: 0;
+    }
+
+    #contactMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contactHeader {
+        font-size: 17.5px;
+    }
+
+    #contactSubHeader {
+        font-size: 15px;
+    }
+
+    #emailSignUp {
+        margin-top: 2vh;
+    }
+    
+    #contactBody {
+        margin-left: 0;
+        margin-right: 0;
+        width: 350px;
+        margin-bottom: 2.5vh;
+    }
+
+    footer {
+        display: none;
+    }
+}
